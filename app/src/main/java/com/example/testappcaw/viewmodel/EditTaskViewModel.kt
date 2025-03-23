@@ -1,6 +1,5 @@
 package com.example.testappcaw.viewmodel
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import com.example.testappcaw.db.Task
 import com.example.testappcaw.db.TaskDao
@@ -11,8 +10,12 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class CompletedTaskViewModel @Inject constructor(
+class EditTaskViewModel @Inject constructor(
     private val taskDao: TaskDao
 ) : ViewModel() {
-    val allCompletedTasks: LiveData<List<Task>> = taskDao.getAllCompletedTasks()
+    fun updateUser(task: Task) {
+        CoroutineScope(Dispatchers.IO).launch {
+            taskDao.update(task)
+        }
+    }
 }

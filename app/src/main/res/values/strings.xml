@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Your PA</string>
+    <string name="app_name">CAW app</string>
     <string name="menu_home"> Pending Task</string>
     <string name="menu_dashboard">Completed Task</string>
     <string name="menu_notifications">Profile</string>

@@ -38,21 +38,20 @@ class AddTaskFragment : Fragment() {
     ): View {
         val view = inflater.inflate(R.layout.fragment_add_task, container, false)
         val subBtn = view.findViewById<Button>(R.id.sub_btn)
-        val onlyForMeCB = view.findViewById<CheckBox>(R.id.onlyForMeCB)
 
-        subBtn.setOnClickListener{
+        subBtn.setOnClickListener {
             val title = view.findViewById<EditText>(R.id.taskTitle).text.toString()
             val desc = view.findViewById<EditText>(R.id.titleDesc).text.toString()
 
-            Toast.makeText(context, title + desc , Toast.LENGTH_SHORT).show()
-            lifecycle.coroutineScope.launch(Dispatchers.Main){
-                if (onlyForMeCB.isChecked) {
-                    viewModel.insertUser(Task(
+            lifecycle.coroutineScope.launch(Dispatchers.Main) {
+                viewModel.insertUser(
+                    Task(
                         task = title,
                         desc = desc,
                         status = "pending"
-                    ))
-                }
+                    )
+                )
+                Toast.makeText(context,"Task Added Successfully", Toast.LENGTH_SHORT).show()
 
             }
 
