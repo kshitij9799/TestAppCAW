@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "621252599818",
+    "project_id": "test-app-caw",
+    "storage_bucket": "test-app-caw.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621252599818:android:5d21f272fe6f91a8f9fff3",
+        "android_client_info": {
+          "package_name": "com.example.testappcaw"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_f-FT9Xcw5ZYvdMrGTW7vCqMSOWnYfdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621252599818:android:80a3d686ab6f999bf9fff3",
+        "android_client_info": {
+          "package_name": "com.example.testappcaw.activity"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_f-FT9Xcw5ZYvdMrGTW7vCqMSOWnYfdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
